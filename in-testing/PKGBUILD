@@ -1,0 +1,26 @@
+pkgname=dummy-sudo
+pkgver=1.0
+pkgrel=1
+pkgdesc="Dummy package to satisfy sudo dependency for base-devel"
+arch=('any')
+provides=('sudo')
+conflicts=('sudo')
+depends=('doas')
+
+package() {
+  # Create the package directory structure
+  install -dm755 "${pkgdir}/usr/bin"
+
+  # Create a symbolic link from /usr/bin/sudo to /usr/bin/doas
+  ln -s /usr/bin/doas "${pkgdir}/usr/bin/sudo"
+
+  # Move the doas.conf file if it doesn't exist in /etc
+  if [[ ! -e "${pkgdir}/etc/doas.conf" ]]; then
+    install -Dm400 "${srcdir}/doas.conf" "${pkgdir}/etc/doas.conf"
+    chmod -c 0400 "${pkgdir}/etc/doas.conf"
+    chown -c root:root "${pkgdir}/etc/doas.conf"
+  fi
+}
+
+# Add the doas.conf file to the source array
+source=('doas.conf')
