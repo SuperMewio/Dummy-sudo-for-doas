@@ -6,6 +6,7 @@ Simply open a terminal and install the PKGBUILD file from it's folder location.
 ```
 https://github.com/SuperMewio/Dummy-sudo-for-doas.git
 cd Dummy-sudo-for-doas
+rm -r in-testing
 makepkg -si
 ```
 
