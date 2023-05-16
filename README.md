@@ -6,7 +6,7 @@ Please make sure to create a config file for doas first before using this. You c
 Simply open a terminal and install the PKGBUILD file from it's folder location. 
 
 ```
-https://github.com/SuperMewio/Dummy-sudo-for-doas.git
+git clone https://github.com/SuperMewio/Dummy-sudo-for-doas.git
 cd Dummy-sudo-for-doas
 makepkg -si
 ```
