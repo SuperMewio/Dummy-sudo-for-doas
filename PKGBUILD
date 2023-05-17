@@ -1,5 +1,5 @@
 pkgname=dummy-sudo
-pkgver=1.0
+pkgver=999.0
 pkgrel=1
 pkgdesc="Dummy package to satisfy sudo dependency for base-devel"
 arch=('any')
