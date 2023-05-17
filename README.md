@@ -1,4 +1,6 @@
 # Dummy-sudo-for-doas
+Please note that this is mostly for personal use. You are welcome to use it yourself but please do not use it if you do not know what you are doing.
+
 This is a dummy arch package that will satisfy base-devel's sudo dependency allowing me to uninstall sudo and also create a symlink so sudo will use doas.
 
 Please make sure to create a config file for doas first before using this. You can follow [this Arch wiki page](https://wiki.archlinux.org/title/Doas) to do so.
