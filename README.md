@@ -12,6 +12,3 @@ git clone https://github.com/SuperMewio/Dummy-sudo-for-doas.git
 cd Dummy-sudo-for-doas
 makepkg -si
 ```
-
-TODO:
-Have it automatically generate a config for doas and set the config files correct permissions.
