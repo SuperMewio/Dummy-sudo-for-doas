@@ -47,5 +47,5 @@ lrwxrwxrwx 1 root root 13 Jan 30 16:11 /usr/bin/sudo -> /usr/bin/doas*
 ```
 Remove the symbolic link, do not do this if the file is NOT a symbolic link.
 ```
-sudo rm /usr/bin/sudo
+sudo rm -i /usr/bin/sudo
 ```
