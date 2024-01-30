@@ -33,6 +33,8 @@ When asked to replace dummy-sudo with sudo, say y.
 
 From here, configure sudo. You can follow [this Arch wiki page](https://wiki.archlinux.org/title/Sudo) to do so.
 
+Confirm sudo is configured correctly, from here you are free to remove doas. If your system breaks for some reason from this, you likely can use arch-chroot to fix it.
+
 ### If the symlink still exists that was created by dummy-sudo:
 
 First, check if /usr/bin/sudo is a symbolic link to doas
