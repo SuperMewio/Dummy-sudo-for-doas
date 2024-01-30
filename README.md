@@ -41,7 +41,7 @@ First, check if /usr/bin/sudo is a symbolic link to doas
 ```
 ls -l /usr/bin/sudo
 ```
-It should output something very simluar to this. The important part is "/usr/bin/sudo -> /usr/bin/doas*". If it outputs this, it is a symbolic link, continue with the removal.
+It should output something very similar to this. The important part is "/usr/bin/sudo -> /usr/bin/doas*". If it outputs this, it is a symbolic link, continue with the removal.
 ```
 lrwxrwxrwx 1 root root 13 Jan 30 16:11 /usr/bin/sudo -> /usr/bin/doas*
 ```
