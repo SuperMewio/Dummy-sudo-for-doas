@@ -12,5 +12,5 @@ package() {
   install -dm755 "${pkgdir}/usr/bin"
   
   # Create a symbolic link from /usr/bin/sudo to /usr/bin/doas
-  ln -s /usr/bin/doas "${pkgdir}/usr/bin/sudo"
+  ln -s $(which doas) "${pkgdir}/usr/bin/sudo"
 }
