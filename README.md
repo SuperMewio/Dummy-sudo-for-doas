@@ -14,3 +14,36 @@ git clone https://github.com/SuperMewio/Dummy-sudo-for-doas.git
 cd Dummy-sudo-for-doas
 makepkg -si
 ```
+
+## Uninstall
+
+If you plan on replacing doas with sudo and you do not have base-devel installed, I recommend replacing dummy-sudo with doas first so eitherway, follow these instructions.
+
+Make sure your system is up-to-date first:
+```
+doas pacman -Syu
+```
+Reboot your system
+
+```
+doas pacman -S sudo
+```
+
+When asked to replace dummy-sudo with sudo, say y.
+
+From here, configure sudo. You can follow [this Arch wiki page](https://wiki.archlinux.org/title/Sudo) to do so.
+
+### If the symlink still exists that was created by dummy-sudo:
+
+First, check if /usr/bin/sudo is a symbolic link to doas
+```
+ls -l /usr/bin/sudo
+```
+It should output something very simluar to this. The important part is "/usr/bin/sudo -> /usr/bin/doas*". If it outputs this, it is a symbolic link, continue with the removal.
+```
+lrwxrwxrwx 1 root root 13 Jan 30 16:11 /usr/bin/sudo -> /usr/bin/doas*
+```
+Remove the symbolic link, do not do this if the file is NOT a symbolic link.
+```
+sudo rm /usr/bin/sudo
+```
