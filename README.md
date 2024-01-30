@@ -5,6 +5,8 @@ This is a dummy Arch package that will satisfy base-devel's sudo dependency allo
 
 ## Installation instructions
 
+These instructions are mainly for a system that is already setup with sudo. Instructions may be different if you are on a fresh install or are in the middle of installing Arch linux and have not properly setup sudo yet. (Setting up sudo should not be required if you are still arch-chrooted into your system.)
+
 Please make sure to create a config file for doas first before using this. You can follow [this Arch wiki page](https://wiki.archlinux.org/title/Doas) to do so. Not creating a config file and then making sure doas is working first may make you unable to access root privs easily. If this happens, you should be able to fix this with arch-chroot.
 
 Simply open a terminal and install the PKGBUILD file from it's folder location. 
