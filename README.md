@@ -35,7 +35,7 @@ From here, configure sudo. You can follow [this Arch wiki page](https://wiki.arc
 
 Confirm sudo is configured correctly, from here you are free to remove doas. If your system breaks for some reason from this, you likely can use arch-chroot to fix it.
 
-### If the symlink still exists that was created by dummy-sudo:
+## Removing the symlink that still exists after removing dummy-sudo:
 
 First, check if /usr/bin/sudo is a symbolic link to doas
 ```
