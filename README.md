@@ -23,7 +23,7 @@ Make sure your system is up-to-date first:
 ```
 doas pacman -Syu
 ```
-Reboot your system
+Reboot your system and then install sudo.
 
 ```
 doas pacman -S sudo
