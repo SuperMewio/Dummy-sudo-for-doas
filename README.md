@@ -45,7 +45,7 @@ It should output something very similar to this. The important part is "/usr/bin
 ```
 lrwxrwxrwx 1 root root 13 Jan 30 16:11 /usr/bin/sudo -> /usr/bin/doas*
 ```
-Remove the symbolic link, do not do this if the file is NOT a symbolic link.
+Remove the symbolic link.
 ```
-sudo rm -i /usr/bin/sudo
+sudo unlink /usr/bin/sudo
 ```
