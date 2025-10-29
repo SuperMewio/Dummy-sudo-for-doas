@@ -52,4 +52,4 @@ Remove the symbolic link.
 sudo unlink /usr/bin/sudo
 ```
 
-If you are using sudo-rs, I recommend usiung <code># ln -s $(which sudo-rs) "/usr/local/bin/sudo"</code> instead of removing sudo altogher. This will allow you to use "sudo" and it will use "sudo-rs" but you can still access regular sudo by typing <code>/usr/bin/sudo</code>
+If you are using sudo-rs, I recommend using <code># ln -s $(which sudo-rs) "/usr/local/bin/sudo"</code> instead of removing sudo altogher. This will allow you to use "sudo" and it will use "sudo-rs" but you can still access regular sudo by typing <code>/usr/bin/sudo</code>
