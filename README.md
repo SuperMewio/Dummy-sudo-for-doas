@@ -51,3 +51,5 @@ Remove the symbolic link.
 ```
 sudo unlink /usr/bin/sudo
 ```
+
+Alternatively, there is an experimental variant for sudo-rs. It's the same file just requires sudo-rs instead of doas and then symlinks sudo-rs to mimic sudo.
