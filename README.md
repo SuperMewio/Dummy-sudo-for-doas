@@ -52,6 +52,4 @@ Remove the symbolic link.
 sudo unlink /usr/bin/sudo
 ```
 
-Alternatively, there is an experimental variant for sudo-rs. It's the same file just requires sudo-rs instead of doas and then symlinks sudo-rs to mimic sudo. Do not use it at this time as installing it will not function as expected.
-
-I recommend usiung <code># ln -s $(which sudo-rs) "/usr/local/bin/sudo"</code> instead of removing sudo altogher. This will allow you to use "sudo" and it will use "sudo-rs" but you can still access regular sudo by typing <code>/usr/bin/sudo</code>
+If you are using sudo-rs, I recommend usiung <code># ln -s $(which sudo-rs) "/usr/local/bin/sudo"</code> instead of removing sudo altogher. This will allow you to use "sudo" and it will use "sudo-rs" but you can still access regular sudo by typing <code>/usr/bin/sudo</code>
